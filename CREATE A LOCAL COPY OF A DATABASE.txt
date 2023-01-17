@@ -1,0 +1,27 @@
+CREATE A LOCAL COPY OF DATABASE
+1. Open PGAdmin
+
+ 
+
+2. Click on PostgreSQL 10\Databases\Create\Database\Add name - same as backupname
+
+ 
+
+3. Open command prompt
+
+ 
+
+4. Change directory
+cd C:\Users\kmc00\OneDrive - CEFAS\OneBenthicDB\BACKUP
+
+ 
+
+5. Type this in. Remember to change name of file (in this case bu_obdb3)
+psql -U postgres -h localhost -p 5433 bu_obdb3 < bu_obdb3.sql
+
+
+ATTEMPTED WITH KC 17th Jan 2023 - in CMD
+
+psql -U postgres -h localhost -p 5432 one_benthic_imagery_TRIAL < one_benthic_imagery_TRIAL.sql
+
+;C:\Program Files\PostgreSQL\15\bin ;C:\Program Files\PostgreSQL\9.5\lib
